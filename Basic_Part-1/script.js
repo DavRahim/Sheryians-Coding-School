@@ -233,3 +233,29 @@ let ass = capital.sort(function (a, b) {
 });
 
 console.log(ass);
+
+// Objects
+
+const person = {
+  name: "Jamal sir",
+  age: 38,
+  height: "5-4",
+  DOB: "02-01-2023",
+};
+
+// For in loop object
+
+for (let key in person) {
+  person[key];
+  console.log(person[key], key);
+}
+
+// console.log(Object.entries(person));
+
+// TODO: Shell Clone
+
+let person2 = { ...person };
+
+// TODO: Deep Clone
+
+let obj2 = JSON.stringify(JSON.stringify(person));
