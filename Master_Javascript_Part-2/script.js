@@ -74,3 +74,31 @@ element.remove();
 
 // Or remove a child:
 parent.removeChild(child);
+
+// TODO:TODO: 🎯 5. Event And Event Handling Listeners (VERY important!)
+
+h1.addEventListener("db", function () {});
+
+// Events let your page respond to user actions.
+/*
+Common events:
+click
+mouseenter
+keyup
+submit
+*/
+button.addEventListener("click", () => {
+  alert("Button clicked!");
+});
+
+// TODO: ⚙️ 6. Practical Example
+// HTML
+//<h1 id="title">Hello</h1>
+//<button id="btn">Change Text</button>
+
+const title = document.getElementById("title");
+const btn = document.getElementById("btn");
+
+btn.addEventListener("click", () => {
+  title.textContent = "Text changed!";
+});
