@@ -129,13 +129,20 @@ Searching
 //<input type="email" />
 //<input type="password" />
 
+// 🛡️ 3. What is Form Validation?
+// Validation checks whether the input is correct before submitting.
 
+// Why do we validate ?
+// ✔ Avoid empty fields
+// ✔ Block invalid email
+// ✔ Protect from bad data
+// ✔ Improve user experience
+// ✔ Prevent errors in database
 
-
-
-
-
-
+// 🧩 4. Two Types of Form Validation
+// ✔ A) HTML Built-In Validation (quick & simple)
+// <input type="email" required />
+// <input type="text" minlength="3" required />
 
 
 // TODO:TODO: localStorage and sessionStorage And Cookies.
