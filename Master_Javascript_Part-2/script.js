@@ -77,7 +77,7 @@ parent.removeChild(child);
 
 // TODO:TODO: 🎯 5. Event And Event Handling Listeners (VERY important!)
 
-h1.addEventListener("db", function () {});
+h1.addEventListener("db", function () { });
 
 // Events let your page respond to user actions.
 /*
@@ -102,3 +102,16 @@ const btn = document.getElementById("btn");
 btn.addEventListener("click", () => {
   title.textContent = "Text changed!";
 });
+
+
+//TODO:TODO: Forms And Form Validation
+
+
+
+
+
+
+
+
+
+// TODO:TODO: localStorage and sessionStorage And Cookies.
