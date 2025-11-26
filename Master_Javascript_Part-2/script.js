@@ -106,6 +106,30 @@ btn.addEventListener("click", () => {
 
 //TODO:TODO: Forms And Form Validation
 
+// 🧾 1. What is a Form?
+// A form is an HTML structure that collects user input.
+// Example:
+//<form>
+// <input type="text" />
+// <button type="submit">Send</button>
+//</form>
+/*
+Forms are used for:
+Login
+Signup
+Contact messages
+Checkout pages
+Payments
+Searching
+*/
+// 🧰 2. Form Elements You Must Know
+// ✔ Input fields
+
+//<input type="text" />
+//<input type="email" />
+//<input type="password" />
+
+
 
 
 
@@ -115,3 +139,66 @@ btn.addEventListener("click", () => {
 
 
 // TODO:TODO: localStorage and sessionStorage And Cookies.
+// 🌐 1. Why do we store data in the browser?
+/*
+To:
+Remember user login
+Save theme (dark/light)
+Save cart items
+Store form data
+Save temporary page info
+Improve user experience
+*/
+
+// 🗂️ 2. localStorage
+// localStorage stores data permanently in the browser(until deleted manually).
+// ✔ Data stays even if:
+// Tab is closed
+// Browser is closed
+// Computer is restarted
+// ✔ Methods
+localStorage.setItem("name", "Rahim");
+localStorage.getItem("name");
+localStorage.removeItem("name");
+localStorage.clear();
+// ✔ Example
+localStorage.setItem("theme", "dark");
+console.log(localStorage.getItem("theme")); // "dark"
+
+//🕒 3. sessionStorage
+/*
+✔ What is it?
+sessionStorage stores data only for the current tab session.
+✔ Data is lost when:
+Tab is closed
+Browser is closed
+⚠️ Does NOT share data across tabs.
+✔ Methods (same as localStorage)
+*/
+sessionStorage.setItem("token", "1243");
+sessionStorage.getItem("token");
+sessionStorage.removeItem("token");
+sessionStorage.clear();
+// ✔ Example
+sessionStorage.setItem("page", "home");
+
+
+// 🍪 4. Cookies
+/*
+✔ What are cookies?
+Small data files stored in the browser, mainly used by:
+Authentication
+Tracking
+Analytics
+Server communication
+✔ Cookies have:
+Expiration date
+Size limit (~4KB)
+Can be accessed by server
+*/
+// ✔ Example
+document.cookie = "username=Rahim; expires=Fri, 31 Dec 2025 12:00:00 UTC; path=/";
+// ✔ Reading cookie
+console.log(document.cookie);
+// ✔ Deleting cookies
+document.cookie = "username=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/";
